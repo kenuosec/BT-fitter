@@ -10,7 +10,7 @@ def get_response(url):
         print(url)
         return res
     except:
-        return 'null response'
+        return '1145141919810'
 
 
 def ext_result(name, result):
@@ -28,17 +28,16 @@ for line in file:
     text = get_response(targeturl)
     print(text)
 
-    if 'null' in text:
+    if '1145141919810' in text:
         print('==========')
         print('Access Denied')
         print('==========')
-
     elif 'etc' in text:
         print('==========')
         print('BT linux sever')
         print('==========')
         ext_result('BTlinuxsever', wordlist)
-    if 'limitip' in text:
+    elif 'limitip' in text:
         print('==========')
         print('BT linux sever')
         print('==========')
